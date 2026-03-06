@@ -372,6 +372,21 @@
       padding: 24px;
     }
 
+    .project-item {
+      transition: all 0.25s ease;
+    }
+    
+    .project-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 28px 50px rgba(120,150,200,0.18);
+      border-color: #bcd6ff;
+    }
+
+    .project-item:hover .chip-link {
+      background: #eaf3ff;
+      border-color: #bcd6ff;
+    }
+    
     .research-card {
       background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(245,249,255,0.95));
     }
