@@ -110,10 +110,10 @@
 
     .hero {
       padding: 86px 0 46px;
+      scroll-margin-top: 96px;
     }
 
     .intro-card,
-    .research-card,
     .paper-item,
     .project-item,
     .study-item,
@@ -230,6 +230,7 @@
 
     section {
       padding: 20px 0 30px;
+      scroll-margin-top: 96px;
     }
 
     .section-heading {
@@ -257,7 +258,6 @@
       color: var(--text-soft);
     }
 
-    .research-grid,
     .papers,
     .projects,
     .study-grid,
@@ -267,7 +267,6 @@
       gap: 18px;
     }
 
-    .research-grid,
     .study-grid,
     .contact-grid {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -279,7 +278,6 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .research-card,
     .paper-item,
     .project-item,
     .study-item,
@@ -288,7 +286,6 @@
       padding: 24px;
     }
 
-    .research-card,
     .paper-item,
     .project-item,
     .study-item,
@@ -298,7 +295,6 @@
       transition: all 0.25s ease;
     }
 
-    .research-card:hover,
     .paper-item:hover,
     .project-item:hover,
     .study-item:hover,
@@ -310,16 +306,11 @@
       border-color: #bcd6ff;
     }
 
-    .research-card {
-      background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(245,249,255,0.95));
-    }
-
     .project-item h3,
     .paper-item h3,
     .study-item h3,
     .award-item h3,
     .contact-card h3,
-    .research-card h3,
     .timeline-item h3 {
       margin: 0 0 10px;
       font-size: 1.1rem;
@@ -418,7 +409,6 @@
 
     @media (max-width: 980px) {
       .intro-grid,
-      .research-grid,
       .papers,
       .projects,
       .study-grid,
@@ -448,7 +438,6 @@
       }
 
       .intro-card,
-      .research-card,
       .paper-item,
       .project-item,
       .study-item,
@@ -485,6 +474,7 @@
       <nav class="menu">
         <a href="#home">Introduction</a>
         <a href="#publications">Publications & Presentations</a>
+        <a href="#projects">Projects</a>
         <a href="#study">Studies</a>
         <a href="#awards">Awards · Qualifications</a>
         <a href="#activities">Activities</a>
@@ -552,7 +542,7 @@
       <div class="container">
         <div class="section-heading">
           <div>
-            <h2>Publications</h2>
+            <h2>Publications & Presentations</h2>
           </div>
           <p>발표 논문, 연구 결과물, 포스터, 발표 자료 등을 정리하는 영역입니다.</p>
         </div>
