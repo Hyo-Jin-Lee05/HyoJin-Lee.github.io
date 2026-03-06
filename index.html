@@ -111,14 +111,7 @@
     .hero {
       padding: 86px 0 46px;
     }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 28px;
-      align-items: stretch;
-    }
-
+    
     .hero-card,
     .info-card,
     .section-box,
@@ -142,6 +135,42 @@
         linear-gradient(135deg, rgba(255,255,255,0.95), rgba(243,248,255,0.94));
     }
 
+    .intro-card {
+      background: var(--surface);
+      border: 1px solid rgba(219, 231, 248, 0.95);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      padding: 36px 42px;
+    }
+    
+    .intro-top {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    
+    .intro-head h1 {
+      margin: 0 0 8px;
+    }
+    
+    .intro-body p {
+      margin: 0 0 18px;
+      color: var(--text-soft);
+      font-size: 1.05rem;
+      max-width: 900px;
+    }
+    
+    .intro-photo {
+      flex-shrink: 0;
+      width: 110px;
+      height: 110px;
+    }
+    
+    .intro-card .info-role {
+      margin-bottom: 0;
+    }
     .eyebrow {
       display: inline-flex;
       align-items: center;
@@ -521,6 +550,15 @@
         padding: 20px;
       }
 
+      .intro-card {
+        padding: 24px;
+      }
+      
+      .intro-top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
       .menu {
         gap: 8px 12px;
       }
@@ -549,37 +587,38 @@
 
   <main>
     <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-card">
-          <h1>Hyo-Jin Lee</h1>
-          <p>
-          I'm an undergraduate student in the Department of Software-Engineering at Yonsei University's Mirae Campus.
-          </p>
-          
-          <p>
-          My research interests include
-          <span class="highlight">image processing</span>,
-          <span class="highlight">machine vision</span>,
-          <span class="highlight">visual communication</span>, and
-          <span class="highlight">satellite communications</span>.
-          </p>
+      <div class="container">
+        <div class="intro-card">
+          <div class="intro-top">
+            <div class="profile-photo intro-photo">
+              <img src="Hyojin_pic.jpg" alt="Hyojin profile">
+            </div>
+    
+            <div class="intro-head">
+              <h1>Hyo-Jin Lee</h1>
+              <div class="info-role">Undergraduate Student · Portfolio</div>
+            </div>
+          </div>
+    
+          <div class="intro-body">
+            <p>
+              I'm an undergraduate student in the Department of Software-Engineering
+              at Yonsei University's Mirae Campus.
+            </p>
+    
+            <p>
+              My research interests include
+              <span class="highlight">image processing</span>,
+              <span class="highlight">machine vision</span>,
+              <span class="highlight">visual communication</span>, and
+              <span class="highlight">satellite communications</span>.
+            </p>
+          </div>
+    
           <div class="hero-actions">
             <a class="btn btn-primary" href="#publications">Resume</a>
           </div>
         </div>
-
-        <aside class="info-card">
-          <div class="profile-photo">
-            <img src="Hyojin_pic.jpg" alt="Hyojin profile">
-          </div>
-          <div class="info-role">Undergraduate Student · Portfolio</div>
-          <ul class="info-list">
-            <li><strong>Major</strong><span>Software-Engineering</span></li>
-            <li><strong>Interest</strong><span>image processing, machine vision, visual communication, satellite communications</span></li>
-            <li><strong>E-Mail</strong><span>jasmine0712@yonsei.ac.kr</span></li>
-            <li><strong>GitHub</strong><span>github.com/Hyo-Jin-Lee05</span></li>
-          </ul>
-        </aside>
       </div>
     </section>
 
